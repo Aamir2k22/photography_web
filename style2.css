@@ -1,0 +1,143 @@
+ 
+   *{
+    margin: 0;
+    padding:0;
+    font-family:sans-serif;
+ 
+}
+
+.main_box{
+    background: url("photo2.jpeg") ;
+    height: 120vh;
+    background-size: cover;
+   
+}
+ 
+.btn_1{
+      color:black;
+      font-size: 30px;
+      font-weight: 700;
+      position: absolute;
+      left: 16px; 
+      line-height:60px;
+  } 
+
+  .sidebar_menu{
+    position: absolute;
+    font-size: 40px;
+    height: 100vh;
+    width: 300px ;
+    text-decoration: none;
+    left: -300px;
+    transition:all 0.3s linear ;
+   
+    
+ }
+
+ .sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow:0 2px 4px rgba(58, 212, 212, 0.5); 
+    height: 60px;
+ }
+
+ .sidebar_menu .logo a{
+    position: absolute;
+    color:rgb(11, 12, 11);
+    left: 50px;
+    font-size: 37px;
+    font-weight:5050;  
+    text-decoration: none;
+
+ }
+
+ .sidebar_menu .btn_2 i{
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 300px; 
+    line-height:60px;
+    color: red;
+    opacity:0 ;
+    transition:all 0.5s linear ;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+   
+}
+
+.sidebar_menu .menu li{
+    margin-top: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sidebar_menu .menu i,a {
+    color:black;
+     text-decoration: none;
+     font-size: 30px;
+
+}
+
+.sidebar_menu .social_media { 
+    color:yellow ;
+    bottom: 20px;
+    position: absolute;
+    left:25% ;
+}
+
+.sidebar_menu .social_media i{
+    color: seagreen;
+    padding: 0 7px;
+    transition:all 0.2s linear ;
+}
+
+#check{
+   display: none; 
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 2px 5px rgba(58, 212, 212, 0.5); 
+}
+
+.btn_1 i:hover{
+    font-size: 50px;
+}
+
+.btn_2 i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform:scale(1.5);
+}
+
+#check:checked~.sidebar_menu  {
+    left:0;
+}
+
+#check:checked~ .btn_1 i{
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_2 i{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
